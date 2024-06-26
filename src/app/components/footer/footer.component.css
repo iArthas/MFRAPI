@@ -1,0 +1,33 @@
+.footer {
+    background-color: white; /* Color de fondo del footer */
+    color: black; /* Color del texto */
+    padding: 20px 0; /* Espaciado interno vertical */
+  }
+  
+  .footer-content {
+    display: flex; /* Hace que los elementos hijos se comporten como flex items */
+    justify-content: center; /* Distribuye el espacio restante uniformemente entre los elementos hijos */
+    align-items: center; /* Alinea los elementos hijos verticalmente en el centro */
+    max-width: 1200px; /* Ancho máximo del contenido para evitar que se extienda demasiado en pantallas grandes */
+    margin: auto; /* Centra el contenido horizontalmente */
+  }
+  
+  
+  
+  .footer a {
+    color: black; /* Color del enlace */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    margin-left: 5px; /* Espacio a la izquierda del enlace */
+  }
+  
+  /* Media query para adaptar el diseño en dispositivos móviles */
+  @media (max-width: 768px) {
+   .footer-content {
+      flex-direction: column; /* Cambia la dirección de los elementos hijos a columna */
+    }
+  
+   .footer-content > :not(:last-child) {
+      margin-bottom: 15px; /* Agrega un margen inferior a todos los elementos excepto el último */
+    }
+  }
+  

@@ -1,0 +1,73 @@
+body {
+  font-family: 'Roboto', sans-serif; /* Aplica la fuente Roboto a todo el cuerpo */
+}
+
+.character-todos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.character {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.10s ease-in-out; /* Transición suave para el hover */
+}
+
+.character:hover {
+  transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+.character-imagen img {
+  width: 100%;
+  height: auto;
+}
+
+.character-info {
+  padding: 10px;
+}
+
+.nombre-contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.character-id-back {
+  position: absolute;
+  font-size: 2em;
+  opacity: 0.1;
+}
+
+.status,.species,.location {
+  margin: 5px 0;
+  font-weight: bold; /* Hace que el texto sea más destacado */
+}
+
+/* Mejorando el aspecto general con un poco de sombreado y bordes redondeados */
+.character,.character-info {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Ajustando el espaciado y el color de fondo para mejorar la legibilidad */
+.character-info {
+  background-color: #f9f9f9;
+  padding: 15px;
+}
+
+/* Mejorando el aspecto de los enlaces */
+.character-info a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out; /* Transición suave para el cambio de color al pasar el mouse */
+}
+
+.character-info a:hover {
+  color: #0056b3; /* Color más oscuro al pasar el mouse */
+}

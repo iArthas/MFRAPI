@@ -1,0 +1,27 @@
+<app-navbar (buttonClick)="handleButtonClick($event)"></app-navbar>
+<main>
+  <div id="todos">
+    <div class="character-todos">
+      <div class="character" id="listaCharacter" *ngFor="let character of characters">
+        <p class="character-id-back">{{'#' + character.id.toString()}}</p>
+        <div class="character-imagen">
+          <img [src]="character.image" alt="">
+        </div>
+        <div class="character-info">
+          <div class="nombre-contenedor">
+            <p class="character-id">{{'#' + character.id.toString()}}</p>
+            <h2 class="character-nombre">{{character.name | uppercase}}</h2>
+          </div>
+          <div class="character-status">
+            <p class="status">Estado: {{character.status}}</p>
+            <p class="species">Especie: {{character.species}}</p>
+          </div>
+          <div class="character-location">
+            <p class="location">Localización: {{character.location.name}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<app-footer></app-footer>

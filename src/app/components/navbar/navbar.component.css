@@ -1,0 +1,94 @@
+.logo {
+    width: 300px; /* Ajuste del tamaño del logo */
+    margin: 0 auto 20px; /* Centra el logo horizontalmente y añade margen inferior */
+    display: block;
+    text-align: center;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en columna */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    padding: 10px 20px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 15px; /* Espacio entre los botones */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    display: flex;
+}
+
+.btn-header {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #4CAF50; /* Color de fondo del botón */
+    border: none;
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Transiciones para hover y active */
+}
+
+.btn-header:hover {
+    background-color: #45a049; /* Color de fondo al pasar el ratón */
+}
+
+.btn-header:active {
+    transform: scale(0.95); /* Efecto al hacer clic */
+}
+
+#ver-todos {
+    background-color: #2196F3; /* Color específico para este botón */
+}
+
+#ver-todos:hover {
+    background-color: #1976D2;
+}
+
+#alive {
+    background-color: #4CAF50;
+}
+
+#alive:hover {
+    background-color: #388E3C;
+}
+
+#dead {
+    background-color: #f44336;
+}
+
+#dead:hover {
+    background-color: #d32f2f;
+}
+
+#unknown {
+    background-color: #9E9E9E;
+}
+
+#unknown:hover {
+    background-color: #757575;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav-list {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .nav-item {
+        margin-bottom: 10px;
+    }
+}
